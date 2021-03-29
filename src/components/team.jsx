@@ -7,7 +7,7 @@ const images=Object.values( import.meta.globEager('../assets/avatars/*.jpg'))
 
 
 return (<section className="section ">
-     <div className="text-center p-4 font-semibold  text-2xl">
+     <div className="text-center p-4 font-semibold  text-3xl">
           <h3> فريق عمل المجموعة</h3>
      </div>
      <Slider>
