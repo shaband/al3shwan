@@ -20,6 +20,8 @@ const makeShadow = (name, rgb) => {
 };
 module.exports = {
   purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
+  mode: "jit",
+
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -34,9 +36,8 @@ module.exports = {
         },
       },
       lineClamp: {
-        7: '7',
+        7: "7",
       },
-
 
       colors: {
         primary: "#171f30",
@@ -59,11 +60,12 @@ module.exports = {
   },
   variants: {
     extend: {
-      backgroundColor: ["even", "odd"],
+      backgroundColor: ["even", "odd", "hover"],
     },
   },
   plugins: [
     require("@tailwindcss/typography"),
     require("@tailwindcss/line-clamp"),
+    require("@tailwindcss/forms"),
   ],
 };

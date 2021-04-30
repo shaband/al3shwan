@@ -48,6 +48,23 @@ return (
 );
 }
 
+function Sponsors(){
+const images=Object.values( import.meta.globEager('../assets/sponsors/*'))
+
+return (
+<div className="text-center w-full py-10 ">
+    <h3 className="mx-auto font-semibold text-3xl">شركاء النجاح</h3>
+
+    <div className="w-10/12 mx-auto md:flex flex-wrap space-x-2">
+        {images.map((image,i)=>(
+        <div key={i}>
+            <img src={image} className="w-44 h-44" />
+        </div>
+        ))}
+
+    </div>
+</div>);
+}
 
 function HomePage (){
 
@@ -60,50 +77,93 @@ return (<>
     </div>
 
     <Testimonials />
-    <div className=" bg-white  h-full">
-        <div class="text-center w-full py-10 ">
+    <div className=" bg-white  h-full pb-16">
+        <div className="text-center w-full py-10 ">
             <h3 className="mx-auto font-semibold text-3xl">مدونة المجموعة</h3>
         </div>
         <div className="md:flex flex-wrap justify-center h-auto ">
             <div className="flex flex-col md:w-1/4 mx-3 sm:w-full shadow-lg rounded-b-xl ">
                 <img src={article1} alt="article" className="rounded-t-xl object-cover h-48" />
-               <div className="p-4">
+                <div className="p-4">
                     <h3 className="line-clamp-2 mb-2 ">
                         كيفية إدارة المكتب القانوني الإلكتروني لقسم الأخبار القانونية لمكتب المحاماة
                     </h3>
                     <p className="line-clamp-4 text-gray-600 text-sm">
-                        في المكتب القانوني الإلكتروني لا نكتفي بالصحف اليومية في عملية البحث عن الخبر القانوني، ولكن نقوم
-                        بالبحث في الجرائد الرسمية وأحكام المحاكم العليا، للوصول إلى أخر المستجدات التي يتطلع إليها عملائك.
+                        في المكتب القانوني الإلكتروني لا نكتفي بالصحف اليومية في عملية البحث عن الخبر القانوني، ولكن
+                        نقوم
+                        بالبحث في الجرائد الرسمية وأحكام المحاكم العليا، للوصول إلى أخر المستجدات التي يتطلع إليها
+                        عملائك.
                     </p>
-               </div>
+                </div>
             </div>
             <div className="flex flex-col mx-3 md:w-1/4 sm:w-full shadow-lg rounded-b-xl">
                 <img src={article2} alt="article2" className="rounded-t-xl object-cover h-48" />
-              <div className="p-4">
+                <div className="p-4">
                     <h3 className="line-clamp-2 my-2 ">كيفية إدارة المكتب القانوني الإلكتروني لقسم الأخبار القانونية
                         لمكتب المحاماة</h3>
-                    <p className="line-clamp-4 text-gray-600 text-sm">في المكتب القانوني الإلكتروني لا نكتفي بالصحف اليومية في عملية
-                        البحث عن الخبر القانوني، ولكن نقوم بالبحث في الجرائد الرسمية وأحكام المحاكم العليا، للوصول إلى أخر
+                    <p className="line-clamp-4 text-gray-600 text-sm">في المكتب القانوني الإلكتروني لا نكتفي بالصحف
+                        اليومية في عملية
+                        البحث عن الخبر القانوني، ولكن نقوم بالبحث في الجرائد الرسمية وأحكام المحاكم العليا، للوصول إلى
+                        أخر
                         المستجدات التي يتطلع إليها عملائك. </p>
-              </div>
+                </div>
             </div>
             <div className="flex flex-col mx-3 md:w-1/4 sm:w-full shadow-lg rounded-b-xl">
                 <img src={article3} alt="article2" className="rounded-t-xl  object-cover h-48" />
                 <div className="p-4">
                     <h3 className="line-clamp-2 my-2 ">كيفية إدارة المكتب القانوني الإلكتروني لقسم الأخبار القانونية
                         لمكتب المحاماة</h3>
-                    <p className="line-clamp-4 text-gray-600 text-sm">في المكتب القانوني الإلكتروني لا نكتفي بالصحف اليومية في عملية
-                        البحث عن الخبر القانوني، ولكن نقوم بالبحث في الجرائد الرسمية وأحكام المحاكم العليا، للوصول إلى أخر
+                    <p className="line-clamp-4 text-gray-600 text-sm">في المكتب القانوني الإلكتروني لا نكتفي بالصحف
+                        اليومية في عملية
+                        البحث عن الخبر القانوني، ولكن نقوم بالبحث في الجرائد الرسمية وأحكام المحاكم العليا، للوصول إلى
+                        أخر
                         المستجدات التي يتطلع إليها عملائك. </p>
                 </div>
             </div>
         </div>
-        <div class="text-center w-full">
-            <a className="mx-auto bg-secondary">button</a>
+        <div className="text-center w-full mt-10">
+            <a href="#"
+                className="mx-auto bg-secondray-gradient text-xl text-white font-semibold md:px-20 py-2  rounded-tl-xl rounded-br-xl shadow-2xl	 cursor-pointer hover:bg-secondary ">مشاهدة
+                كل المقالات</a>
         </div>
 
 
     </div>
+
+    <div className="bg-white  h-full">
+
+
+        <div className="flex flex-col items-center align-middle bg-primary p-4 w-10/12 mx-auto rounded-lg text-white ">
+            <h2 className="text-2xl  text-center font-bold pt-5 mb-3">ابق على تواصل معنا</h2>
+            <p className=" opacity-75 text-base text-center leading-relaxed w-3/4 mb-4">بامكانك البقاء معنا على اتصال و
+                معرفة كل ما هو جديد عن مجموعة مكاتب أحمد الشوان و التواصل مع فريق العمل
+                دائماً كل ما عليك هو ادخال رقم جوالك</p>
+            <form>
+                <div className="flex rounded-xl text-primary">
+                    <div className="flex flex-col bg-white md:w-96 xs:w-48  rounded-r ">
+                        <label className="pr-4 text-sm font-bold pt-1" htmlFor="email"> رقم الجوال</label>
+                        <input id="email" type="email" name="email"
+                            className="focus:ring-secondary focus:border-secondary flex-1 block w-full rounded-none rounded-br-md  sm:text-sm border-none "
+                            placeholder="ادخل رقم جوالك" />
+                    </div>
+                    <button type="button"
+                        className="bg-secondray-gradient text-white  p-4 rounded-l px-8 ">إرسـال</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+
+
+    <div className="bg-white  h-full">
+        {/* {Sponsors()} */}
+    </div>
+
+
+
+
+
 </>)
 }
 export default HomePage;

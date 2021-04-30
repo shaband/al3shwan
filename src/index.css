@@ -48,4 +48,10 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 .testimonial-body {
 min-height: 10.6rem
 }
+.bg-secondray-gradient {
+    background-image: radial-gradient(circle at 53% 50%, #9d6527, #c08949 136%);
+
+}
+
 @tailwind utilities;
+@layer components {}
