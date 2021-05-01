@@ -7,13 +7,12 @@ import article2 from '../assets/articles/scott-graham-OQMZwNd3ThU-unsplash.jpg';
 import article3 from '../assets/articles/cytonn-photography-GJao3ZTX9gU-unsplash.jpg';
 import Team from '../components/team';
 import Testimonials from '../components/testimonials';
-
+import  Sponsors from '../components/Sponsors'
+import  Footer from '../components/Footer'
 
 
 
 function Intro(){
-
-
 return (
 <section className="section  md:max-h-100">
     <div className="flex-wrap pb-8 intro-background md:flex">
@@ -46,24 +45,6 @@ return (
 
 </section>
 );
-}
-
-function Sponsors(){
-const images=Object.values( import.meta.globEager('../assets/sponsors/*'))
-
-return (
-<div className="text-center w-full py-10 ">
-    <h3 className="mx-auto font-semibold text-3xl">شركاء النجاح</h3>
-
-    <div className="w-10/12 mx-auto md:flex flex-wrap space-x-2">
-        {images.map((image,i)=>(
-        <div key={i}>
-            <img src={image} className="w-44 h-44" />
-        </div>
-        ))}
-
-    </div>
-</div>);
 }
 
 function HomePage (){
@@ -157,9 +138,11 @@ return (<>
 
 
     <div className="bg-white  h-full">
-        {/* {Sponsors()} */}
+        <Sponsors/>
     </div>
 
+
+<Footer/>
 
 
 

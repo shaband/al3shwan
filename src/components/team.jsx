@@ -13,7 +13,7 @@ return (<section className="section ">
      <Slider>
           {images.map((image,i)=>{
           return <div key={i} className="w-64 h-64 flex flex-col items-center justify-items-center my-14">
-               <img src={image.default} className="w-64 h-64 rounded-full" />
+               <img src={image.default} className="w-64 h-64 rounded-full" loading="lazy"/>
                <div className="text-center space-x-1">
                     <h1 className="text-xl font-semibold">أحمد العشوان</h1>
                     <h1 className="text-base text-gray-600">محامي ومستشار قانوني </h1>
