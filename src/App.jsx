@@ -7,7 +7,7 @@ import AppNavBar from './components/navbar'
 function App() {
 
 return (
-<div dir="rtl" className="font-Cairo bg-primary container">
+<div dir="rtl" className="font-Cairo bg-primary ">
   <AppNavBar />
   <HomePage />
 </div>
