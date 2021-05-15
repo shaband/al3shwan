@@ -53,14 +53,21 @@ module.exports = {
       maxHeight: {
         100: "30rem",
       },
+     
       boxShadow: (theme) => ({
         white: "0 10px 34px 0 rgba(210, 210, 210, 0.5)",
+      }),
+      backgroundImage: (theme) => ({
+        "intro-background": "url('./src/assets/intro-background.png')",
+        "footer-background": "url('./src/assets/footer-bg.png')",
+        "newsletter-background": "url('./src/assets/newsletter-bg.svg')",
       }),
     },
   },
   variants: {
     extend: {
       backgroundColor: ["even", "odd", "hover"],
+      backgroundImage: ["hover", "focus"],
     },
   },
   plugins: [

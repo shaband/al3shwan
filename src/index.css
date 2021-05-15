@@ -11,13 +11,7 @@
     @apply border-2 border-secondary text-secondary rounded-br-2xl rounded-tl-2xl font-semibold
 }
 
-.intro-background {
-    background-image: url('./assets/intro-background.png');
-    background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    background-position:left top;
-    background-size: 75%;
-}
+
 .testimonal-bg-img {
     background-image: url('./assets/arrows-down.svg');
     background-repeat: no-repeat;
@@ -52,6 +46,7 @@ min-height: 10.6rem
     background-image: radial-gradient(circle at 53% 50%, #9d6527, #c08949 136%);
 
 }
+
 
 @tailwind utilities;
 @layer components {}
